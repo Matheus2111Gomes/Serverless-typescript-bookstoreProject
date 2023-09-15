@@ -5,8 +5,8 @@ export default {
   events: [
     {
       http: {
-        method: 'post',
-        path: 'hello',
+        method: 'put',
+        path: 'editarLivro',
         request: {
           schemas: {
             'application/json': schema,
