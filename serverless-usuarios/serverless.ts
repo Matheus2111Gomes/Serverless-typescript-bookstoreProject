@@ -2,7 +2,7 @@
 import type { AWS } from '@serverless/typescript';
 
 import { hello, auth } from './src/functions';
-import { sqs, dynamo } from './src/resources';
+import { sqs } from './src/resources';
 
 
 const serverlessConfiguration: AWS = {
@@ -91,9 +91,6 @@ const serverlessConfiguration: AWS = {
     resources:{
       Resources:{
         sqsFanout:sqs.sqsFanout,
-        sqsCadastrarLivro:sqs.sqsCadastrarLivro,
-        sqsDetalhesLivro:sqs.sqsDetalhesLivro,
-        sqsEditarLivro:sqs.sqsEditarLivro,
        // dynamoLivros: dynamo.dynamoLivros,
       }
     },

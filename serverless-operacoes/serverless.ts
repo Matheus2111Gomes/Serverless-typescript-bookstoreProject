@@ -91,9 +91,7 @@ const serverlessConfiguration: AWS = {
     resources:{
       Resources:{
         sqsFanout:sqs.sqsFanout,
-        sqsCadastrarLivro:sqs.sqsCadastrarLivro,
-        sqsDetalhesLivro:sqs.sqsDetalhesLivro,
-        sqsEditarLivro:sqs.sqsEditarLivro,
+
       }
     },
 };
