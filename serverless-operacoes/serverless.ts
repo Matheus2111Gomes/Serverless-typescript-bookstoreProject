@@ -16,7 +16,7 @@ const serverlessConfiguration: AWS = {
       packager: 'npm',
     },
     stage: '${opt:stage, self:provider.stage}',
-    stages: ['dev001', 'prod'],    
+    stages: ['develop', 'prod'],    
     prune: {
       automatic: true,
       number: 3,

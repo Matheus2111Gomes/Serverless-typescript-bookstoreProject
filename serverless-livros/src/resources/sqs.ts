@@ -14,7 +14,7 @@ var sqsFanout = {
     Properties:{
       DelaySeconds: 1,
       MaximumMessageSize: 1024,
-      QueueName: 'sqsTeste-${opt:stage}',
+      QueueName: 'sqsCadastrarLivro-${opt:stage}',
     }
   }
   var sqsDetalhesLivro = {
@@ -22,7 +22,7 @@ var sqsFanout = {
     Properties:{
       DelaySeconds: 1,
       MaximumMessageSize: 1024,
-      QueueName: 'sqsTeste-${opt:stage}',
+      QueueName: 'sqsDetalhesLivro-${opt:stage}',
     }
   }
   var sqsEditarLivro = {
@@ -30,7 +30,7 @@ var sqsFanout = {
     Properties:{
       DelaySeconds: 1,
       MaximumMessageSize: 1024,
-      QueueName: 'sqsTeste-${opt:stage}',
+      QueueName: 'sqsEditarLivro-${opt:stage}',
     }
   }
 
